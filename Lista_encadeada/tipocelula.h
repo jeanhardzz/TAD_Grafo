@@ -1,3 +1,6 @@
+#ifndef CELULA
+#define CELULA
+
 #include "../tipoitem.h"
 class TipoCelula{
     public:
@@ -7,3 +10,5 @@ class TipoCelula{
         TipoCelula *prox;
         friend class ListaEncadeada;
 };
+
+#endif

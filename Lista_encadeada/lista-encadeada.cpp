@@ -123,10 +123,12 @@ TipoItem ListaEncadeada::RemovePosicao(int pos) {;
 TipoItem ListaEncadeada::Pesquisa(TipoChave c) {
     TipoItem aux;
     TipoCelula *p;
-    if (tamanho == 0)
-        throw "ERRO: Lista vazia!";
-    p = primeiro->prox;
     aux.SetChave(-1);
+
+    if (tamanho == 0)
+        return aux;
+        
+    p = primeiro->prox;    
     while (p!=0) {
         if (p->item.GetChave() == c) {
             aux = p->item;

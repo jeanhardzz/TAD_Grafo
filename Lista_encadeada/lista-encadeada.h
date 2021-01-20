@@ -1,3 +1,6 @@
+#ifndef LISTA_ENCADEADA
+#define LISTA_ENCADEADA
+
 #include "lista.h"
 #include "../tipoitem.h"
 #include "tipocelula.h"
@@ -23,3 +26,5 @@ class ListaEncadeada : public Lista {
         TipoCelula* ultimo;
         TipoCelula* Posiciona(int pos, bool antes);
 };
+
+#endif

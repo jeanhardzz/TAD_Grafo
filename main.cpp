@@ -1,7 +1,8 @@
 #include <iostream>
 
-#include <map>
-#include "Lista_encadeada/lista-encadeada.h"
+//#include <map>
+//#include "Lista_encadeada/lista-encadeada.h"
+#include "grafo_direcionado.h"
 
 int main(){
     /*
@@ -29,7 +30,9 @@ int main(){
 
    /**
     * Map com listas encadeadas
-    * */
+    */
+
+   /*
    std::map<int,ListaEncadeada> g;
    TipoItem x,y;
    x.SetChave(5);
@@ -38,13 +41,25 @@ int main(){
    g[2].InsereFinal(y);
    g[1].Imprime();
    g[2].Imprime();
+   */
+   
+   
+
+  /*
+    * Testando Grafo 
+    */
+
+   GrafoDirecionado grafo(3);
+
+   
+   grafo.SetN(3);
+   grafo.AdicionaAresta(1,2);   
+   grafo.AdicionaAresta(1,3);
+   grafo.AdicionaAresta(3,2);   
+
+   grafo.Imprime();
+   
 
 
-
-
-
-
-
-
-    return 0;
+   return 0;
 }
