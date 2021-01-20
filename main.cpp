@@ -49,16 +49,31 @@ int main(){
     * Testando Grafo 
     */
 
-   GrafoDirecionado grafo(3);
+   GrafoDirecionado grafo;
 
-   
-   grafo.SetN(3);
    grafo.AdicionaAresta(1,2);   
    grafo.AdicionaAresta(1,3);
-   grafo.AdicionaAresta(3,2);   
+   grafo.AdicionaAresta(2,3);
+   grafo.AdicionaAresta(2,4);   
+   grafo.AdicionaAresta(2,5);   
+   grafo.AdicionaAresta(3,5);
+   grafo.AdicionaAresta(3,7);
+   grafo.AdicionaAresta(3,8);
+   grafo.AdicionaAresta(5,6);   
+     
 
    grafo.Imprime();
+
+   std::cout<<"Nos: "<< grafo.GetN() << std::endl;
+   std::cout<<"Arestas: "<< grafo.GetM() << std::endl;
+   TipoChave c = 1; 
+   //grafo.ErroBuscaItensLarguraMax(c);
    
+   
+   //grafo.teste();
+   grafo.ImprimeBuscaLargura(c);
+   //grafo.Imprime();
+
 
 
    return 0;

@@ -58,6 +58,9 @@ void ListaEncadeada::InsereFinal(TipoItem item)
     nova->item = item;
     ultimo->prox = nova;
     ultimo = nova;
+    if(tamanho==0){
+        primeiro->prox = nova;
+    }
     tamanho++;
 };
 
