@@ -34,14 +34,15 @@ void GrafoDirecionado::AdicionaAresta(TipoChave no1, TipoChave no2){
         this->g[no2].InsereFinal(no2);
         this->n++;
     }    
-    this->m++;
-    this->g[no1].InsereFinal(no2);
+    //this->m++;
+    //this->g[no1].InsereFinal(no2);
 
-    /* Caso eu queira garantir que nao vou adicionar duas arestas iguais
+    // Caso eu queira garantir que nao vou adicionar duas arestas iguais
     if(this->g[no1].Pesquisa(no2).GetChave() == -1){
         this->g[no1].InsereFinal(no2);
+        this->m++;
     }
-    */
+    
 }
 
 void GrafoDirecionado::Imprime(){

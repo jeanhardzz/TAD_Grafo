@@ -59,7 +59,8 @@ int main(){
    grafo.AdicionaAresta(3,5);
    grafo.AdicionaAresta(3,7);
    grafo.AdicionaAresta(3,8);
-   grafo.AdicionaAresta(5,6);   
+   grafo.AdicionaAresta(5,6);
+   grafo.AdicionaAresta(1,2);      
      
 
    grafo.Imprime();
